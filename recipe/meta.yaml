@@ -1,4 +1,4 @@
-{% set version = "1.6.2" %}
+{% set version = "1.6.3" %}
 {% set posix = 'm2-' if win else '' %}
 {% set native = 'm2w64-' if win else '' %}
 
@@ -10,7 +10,7 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/StAMPP_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/StAMPP/StAMPP_{{ version }}.tar.gz
-  sha256: 45bb50b70491ba6e18e09765385fa51cbf03c133596e1f31a8dbc674b912ca57
+  sha256: c20abd17e2f17da0606096a9439d8db50c32204d2b7c53e55d9ab1c43df11b7b
 
 build:
   merge_build_host: true  # [win]
