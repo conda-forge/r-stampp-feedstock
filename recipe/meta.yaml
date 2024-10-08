@@ -1,6 +1,5 @@
 {% set version = "1.6.3" %}
 {% set posix = 'm2-' if win else '' %}
-{% set native = 'm2w64-' if win else '' %}
 
 package:
   name: r-stampp
@@ -13,8 +12,7 @@ source:
   sha256: c20abd17e2f17da0606096a9439d8db50c32204d2b7c53e55d9ab1c43df11b7b
 
 build:
-  merge_build_host: true  # [win]
-  number: 2
+  number: 3
   noarch: generic
   rpaths:
     - lib/R/lib/
